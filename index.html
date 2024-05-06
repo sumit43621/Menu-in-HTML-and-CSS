@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Menu in Css</title>
+    <style>
+        body{
+            background-image: url(./img/bg.png);
+        }
+        .headerNav{
+            width: 1280px;
+            height: 50px;
+            background: #333;
+            margin: 20px auto;
+        }
+        .headerNav > ul {
+            list-style: none;
+        }
+        .headerNav > ul > li{
+            float: left;
+        }
+        .headerNav > ul > li > a{
+            display: inline-block;
+            
+            height: 12px;
+            line-height: 12px;
+            padding: 19px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        .active{
+            background: #FF6347;
+        }
+        .headerNav > ul > li:hover a{
+            background: #FF6347;
+        }
+        .ufoimg{
+            background-image: url("./img/ufo.png");
+            background-repeat: no-repeat;
+            background-size: 15px 15px;
+            background-position: 0px 15px;
+        }
+
+    </style> 
+</head>
+<body>
+    <nav class="headerNav">
+        <ul>
+            <li>
+                <a href="" class="ufoimg"> Company Logo</a>
+            </li>
+            <li>
+                <a href="" class="active">Active</a>
+            </li>
+            <li>
+                <a href="">Drop Down <i class="fa-solid fa-chevron-down"></i></i></a>
+            </li>
+            <li>
+                <a href="">Mega Menu <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+                <a href="">Grid <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+                <a href="">Tab Bar <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+                <a href="">Images <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+                <a href="">Contact <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
